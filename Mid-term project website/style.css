@@ -1,0 +1,729 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  /* box-sizing so that adding padding will not affect the block size */
+  /* box sizing types: content-box, padding-box, border-box, inherit. */
+  font-family: "Spartan", sans-serif;
+}
+
+/* flex: 1(grow) 0(shrink) 0%(basis) */
+/* flex grow = defines how much an item should grow relating to its co-item/s when screen is growing */
+/* flex shrink = defines how much an item should shrink relating to its co-item/s when screen is growing */
+
+/* Global Styles */
+
+h1 {
+  font-size: 60px;
+  line-height: 64px;
+  /* line height, spaces that lies between word above and word below */
+  color: #222;
+}
+
+h2 {
+  font-size: 45px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #222;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 40px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+  /* 100% of parent element which is the html itself */
+}
+
+/* header start */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* so there is space between the logo and the navs */
+    padding: 20px 80px;
+    background: #000;
+    position: sticky;
+    /*  */
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* navbar */
+.header .searchbar {
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 75px;
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.header .searchbar .search-icon {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 17px;
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* make contents in navbar locates in the middle */
+}
+
+.navbar li {
+    list-style: none;
+    /* no more bullet points */
+    padding: 0 20px;
+    /* remove bullet points and put spaces between the elements */
+}
+
+.navbar li a {
+    padding-bottom: 5px;
+    text-decoration: none;
+    /* no mor underline */
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    /* remove underlines, add font-size and weight */
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+    /* remove underlines, add font-size and weight */
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    border-style: solid;
+    border-width: 2px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-color: #FDDA0D;
+}
+
+.navbar li a.cart {
+    font-size: 22px;
+    color: #FDDA0D;
+    /* make a different color for cart icon */
+}
+
+.navbar li a.cart:hover {
+    font-size: 24px;
+    border: none;
+    /* cart icon will enlarge when hover */
+}
+
+/* button */
+.btn {
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 27px;
+    color: #FDDA0D;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 3px;
+    /* customize button */
+}
+
+.btn:hover {
+    border-style: solid;
+    border-color: #FDDA0D;
+    color: #000;
+    background-color: #FDDA0D;
+    /* border of button will disappear when hover and become solid */
+    transition: 0.3s ease;
+}
+
+/* hero | home page */
+.hero {
+    /* z-index defines the element's order/layer, default value = auto, higher>lower */
+    background-image: url("img/hero4.jpg");
+    height: 86vh;
+    width: 100%;
+    background-size: cover;
+    /* background size defies the background's image proportion on the background, default = auto */
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    /* align items, flex-start = top, center = middle, flex-end = bottom. Vertically. */
+    justify-content: center;
+    /* aligns the container's items when the items do not use up all of the horizontal spaces. */
+    flex-direction: column;
+    position: relative;
+    /* flex direction, row -, column | */
+
+}
+
+.hero * {
+    z-index: 5;
+}
+
+.hero::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+}
+
+/* position, relative = adjust the position of an element its original position, fixed = relative to viewport, absolute = relative to the nearest parent/ancestor, sticky = relative to the screen's scroll position */
+
+/* elements with position absolute will always find a parent with position relative, if there is nil parent with position relative, it will take the body or the html */
+
+.hero h1 {
+    padding-bottom: 15px;
+    color: #fff;
+    /* making space between h4 and h2 */
+}
+
+.hero p {
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+/* information */
+
+.flex-columns.flex-reverse  .row{
+    flex-direction: row-reverse;
+    /* to reverse the item's order of the row, such as 1234, 4321 */
+    background-color: #000;
+}
+
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* to display enough item/s in view screen when the screen is shrinking or enlarging */
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.flex-columns .column .column-2{
+    height: 100%;
+}
+
+.flex-columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object fit specifies how an image should be resize to fit its container */
+}
+
+.flex-columns .column-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+}
+
+.flex-columns h4 {
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 400;
+}
+
+.flex-columns h2 {
+    color: white;
+    font-weight: 600;
+}
+
+.flex-columns p {
+    margin: 20px 0;
+    color: white;
+}
+
+/* feature */
+
+.feature-header {
+    text-align: center;
+    /* set the start position of text in container */
+    justify-content: center;
+    /* set the container's items position if its items do not uses all spaces in main-axis (horiozontally) */
+    align-items: center;
+    /* set the items in a container position according from top to bottom (verticallty) */
+}
+
+.feature-header h2 {
+    margin-top: 30px;
+}
+
+.feature .fe-box {
+    width: 365px;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 0;
+    margin: 0px 0px 40px 0px;
+}
+
+.fe-box img {
+    width: 100%;
+}
+
+.fe-box h6 {
+    color: #000;
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 14px
+}
+
+.fe-box .btn {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    /* this display allows block element to be inlined with other items */
+    padding: 10px 22px;
+    color: #000;
+    font-weight: 600;
+    background-color: #FDDA0D;
+    border-width: 3px;
+    border: none;
+    /* customize button */
+}
+
+.fe-box .btn:hover {
+    color: #FDDA0D;
+    background-color: #000;
+    /* border of button will disappear when hover and become solid */
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+/* spring limited */
+
+.product1 {
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 40px 40px 40px;
+    
+}
+
+.product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    border: 1px solid #000;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.product1 .pro img {
+    width: 100%;
+}
+
+.product1 .pro .des {
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: start;
+    padding: 10px 0;
+
+}
+
+.product1 .pro .des span {
+    color: #606063;
+    font-size: 12px;
+}
+
+.product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px
+}
+
+.product1 .pro .des i {
+    font-size: 12px;
+}
+
+.product1 .pro .des h4 {
+   padding-top: 7px;
+   font-size: 25px;
+   font-weight: 700;
+   color: #000;
+}
+
+.product1 .pro .buy-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.product1 .pro .buy-cart .buy-now {
+    padding: 10px;
+    background-color: #FDDA0D;
+    width: 50%;
+    height: 50px;
+}
+
+.product1 .pro .buy-cart .buy-now a {
+    display: inline-block;
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.product1 .pro .buy-cart .add-cart {
+    display: inline-block;
+    background-color: #000;
+    width: 50%;
+    height: 50px;
+}
+
+.product1 .pro .buy-cart .add-cart .cart {
+    color: #FDDA0D;
+    padding: 16px;
+}
+
+.product1 .pro-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+/* Banner */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner/banner.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner.home-banner {
+    background-image: url("img/homebanner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner.home-banner h4,
+.banner.home-banner h2 {
+    color: #fff;
+}
+
+.banner h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+.banner h2 {
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.banner p {
+    color: #000;
+}
+
+.banner * {
+    z-index: 10;
+}
+
+.banner::before {
+    /* before and after selector inserts something before or after an element */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    /* red, green, blue, alpha, alpha = the opacity */
+}
+
+/* Footer */
+
+.footer-section {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.footer-section .social-media .icon i {
+    color: #000;
+}
+
+.footer-section .footer-navs {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer-section .footer-navs h4 {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.footer-section .footer-navs a {
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section .footer-navs a:hover {
+    border-style: solid;
+    border-width: 3px;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-color: #FDDA0D;
+}
+
+.footer-logo {
+    text-decoration: none;
+    font-size: 85px;
+    font-weight: 600;
+    color: #000;
+    /* remove underlines, add font-size and weight */
+}
+
+.footer-section .social-media {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    flex-direction: column;
+}
+
+.footer-section .social-media h4 {
+    padding-bottom: 20px;
+    padding-right: 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.footer-section .social-media a {
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section .social-media a:hover {
+    border-style: solid;
+    border-width: 3px;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-color: #FDDA0D;
+}
+
+.copyrights {
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyrights p {
+    font-size: 13px;
+    color: #000;
+    font-weight: 500;
+}
+
+/* shop page */
+
+.page-header {
+    background-image: url(img/banner/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    position: relative;
+    z-index: -1;
+}
+
+.page-header * {
+    z-index: 10;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.page-header h1{
+    color: #fff;
+    font-weight: 800;
+}
+
+.page-header p{
+    color: #fff;
+    font-weight: 600;
+}
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    text-decoration: none;
+    background-color: #000;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #FDDA0D;
+    font-weight: 600;
+}
+
+.pagination a:hover {
+    background-color: #FDDA0D;
+    color: #000;
+    transition: 0.3s ease;
+}
+
+/* contact */
+
+.contact {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    height: auto
+}
+
+.contact-in {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #000;
+}
+
+.contact-map {
+    width: 100%;
+    height: auto; 
+    flex: 50%;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    font-weight: 500;
+    text-align: left;
+    padding: 30px
+}
+
+.contact-form h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+.contact-form h1 {
+    margin-bottom: 10px;
+}
+
+.contact-form-txt {
+    width: 100%;
+    height: auto; 
+    flex: 50%;
+    color: #000;
+    border: 2px solid #FDDA0D;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contact-form-txt::placeholder {
+    color: #000;
+    font-weight: 400;
+}
+
+.contact-form-textarea {
+    width: 100%;
+    height: 130px; 
+    color: #000;
+    border: 2px solid #FDDA0D;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}

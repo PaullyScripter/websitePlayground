@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    
+    <link rel="stylesheet" href="style.css?v=2025-11-03">
+    
+    <link rel="icon" href="Website Icon (Marshadow).ico">
+
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+
+
+    
+    
+    <title>Paul Nguyen Portfolio</title>
+</head>
+<body>
+   <div class="container">
+      
+      <div id="equals-overlay" aria-modal="true" role="dialog">
+        <div class="eq-board" role="document" aria-live="off">
+          <div class="eq-col eq-left" aria-hidden="true"></div>
+          <div class="eq-symbol" aria-hidden="true">=</div>
+          <div class="eq-col eq-right" aria-hidden="true"></div>
+
+          
+          <div class="eq-hint" role="button" tabindex="0" hidden>click to enter</div>
+
+
+        </div>
+      </div>
+
+
+    
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name"><a class="nav-name-link" href="#home">Paul Nguyen</a></p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                </li>
+                <li class="nav_list">
+                    <a href="#gallery-sec" class="nav-link">My Works</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Why Me</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a download class="btn" href="Paul Nguyen.pdf">
+                Download Resume <i class="uil uil-file-alt"></i>
+            </a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+    
+    <main class="wrapper">
+       
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Paul Nguyen</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>A Computer Science Undergrad at SDSU, who has a sophisticated background in mathematics, science, and programming.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <a class="btn" href="#about">About me</a>
+                <a class="btn" href="#gallery-sec">My work</a>
+            </div>
+            <div class="social_icons">
+                <div class="icon"><a href="https://www.linkedin.com/in/paully-nguyen/"><i class="uil uil-linkedin"></i></a></div>
+                <div class="icon"><a href="https://www.instagram.com/ng_pows/"><i class="uil uil-instagram"></i></a></i></div>
+                <div class="icon"><a href="https://github.com/PaullyScripter"><i class="uil uil-github"></i></a></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/avatar.jpg" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#gallery-sec" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll!</p>
+            </a>
+          </div>
+       </section>
+
+       <section class="gallery section" id="gallery-sec">
+        <div class="top-header">
+            <h1>My Projects</h1>
+        </div>
+        <div class="gallery-container">
+        <img class="gallery-item gallery-item-1 img-1"
+            src="img/image-1.png" data-index="1" alt="image-1"
+            data-title="Pablo Travel"
+            data-desc="A responsive travel landing page with booking CTA and hero search. Built with HTML/CSS/JS."
+            data-link="https://docs.google.com/document/d/1QnqELTEYRGMKLBsd7MsTTF0tdhbYEi0iaWwOzsXhml4/edit?usp=sharing" />
+
+        <img class="gallery-item gallery-item-2 img-2"
+            src="img/image-3.png" data-index="2" alt="image-2"
+            data-title="Equinox"
+            data-desc="Discord multipurpose bot, integrated from 11,000+ lines of Python code, used by 100+ servers and 45000+ active users." 
+            data-link="https://discord.com/invite/2nKcRryJpj" />
+
+        <img class="gallery-item gallery-item-3 img-3"
+            src="img/image-2.png" data-index="3" alt="image-3"
+            data-title="PRABLO"
+            data-desc="E-commerce concept (Prada)/ Mock fashion brand: product grid, flex integration, collection CTA, and smooth hero transition"
+            data-link="https://docs.google.com/document/d/1QnqELTEYRGMKLBsd7MsTTF0tdhbYEi0iaWwOzsXhml4/edit?usp=sharing"
+            />
+
+        <img class="gallery-item gallery-item-4 img-4"
+            src="img/image-4.png" data-index="4" alt="image-4"
+            data-title="Portfolio"
+            data-desc="Early personal portfolio with about, work, and contact sections." 
+            data-link="https://docs.google.com/document/d/1QnqELTEYRGMKLBsd7MsTTF0tdhbYEi0iaWwOzsXhml4/edit?usp=sharing"/>
+
+        <img class="gallery-item gallery-item-5 img-5"
+            src="img/image-5.jpg" data-index="5" alt="image-5"
+            data-title="Equinox Bot Website"
+            data-desc="A website for the Equinox Discord bot, integrated with a backend that implemented crypto payment with cryptomus." 
+            data-link="https://equinoxbot.netlify.app"/>
+        </div>
+
+        
+        <div id="proj-tooltip" aria-hidden="true"></div>
+
+        <div class="gallery-controls"></div>
+
+        <div id="timeline">
+            <div class="top-header timeline-header">
+                <h1>My Coding Experience</h1>
+              </div>
+              <div class="timeline">
+                <ul class="timeline-box">
+                  <li>
+                    <div class="timeline-div">
+                      <time>2017</time> I started using Discord as a medium of communication and was quite surprised and intrigued about the working of Discord bots. Users have always been able to perform operations that are otherwise impossible with it, which motivated me to build one too. For instance, when I was 10 years of age, I used Pycord to learn Python and Node.js to learn JavaScript to enable me to develop a Discord bot.
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-div">
+                      <time>2018</time> I started to develop my bot almost a year and in late 2017 I got a chance to go abroad to Malaysia. During my stay there I manage to get a lot of experiences, especially with regard to cultural and language practices of the community.
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-div">
+                      <time>2021</time> I share my experience of life and everyday practices during almost four years of living in Malaysia before traveling back to Vietnam as a result of the COVID-19 outbreak. Discord stayed as my go-to place and I spent the time refreshing and remodeling my bot as well as enhancing my programming abilities.
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-div">
+                      <time>2022</time> For these and other larger projects I came to apply web development programming languages like HTML, CSS, and JavaScript. One was a case of developing a mock fashion brand website, the other included making a discord bot with more than 5000 lines of python code which interacted with more than 11000 users. scientists’ conventions and also engaged in several occurrences of science events.
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-div">
+                      <time>2024</time> In my senior year in 2024 I enrolled to computer science class and learnt about web development especially the backend design. This was a pathway to admission to several American universities and in particular got admission at San Diego State University.
+                    </div>
+                  </li>
+                </ul>
+            </div>
+        </div>
+       </section>
+
+       
+       
+<section class="section" id="about">
+  <div class="top-header">
+    <h1>About Me</h1>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="about-info">
+        <h3>Who I really am!</h3>
+        <p>I am an international college student in the US, with a huge dream of being able to contribute my works and skills as a personal passion to the technology industry in the world in general and the US specifically. I believe and hope that one day, technology won't be a privilege, but is freely available, accessible, and beneficial to everyone around the world. </p>
+      </div>
+    </div>
+
+    <div class="col skills-box-container">
+      <div class="skills-box">
+        <div class="skills-header"><h3>Frontend</h3></div>
+        <div class="skills-list"><span>HTML</span><span>CSS</span></div>
+      </div>
+      <div class="skills-box">
+        <div class="skills-header"><h3>Backend</h3></div>
+        <div class="skills-list"><span>JavaScript</span><span>Python</span><span>Java</span></div>
+      </div>
+      <div class="skills-box">
+        <div class="skills-header"><h3>Math Skills</h3></div>
+        <div class="skills-list">
+          <span>Geometry</span><span>Trigonometry</span><span>Algebra 1</span><span>Algebra 2</span><span>College Pre-calculus</span><span>Calculus 1</span>
+        </div>
+      </div>
+      <div class="skills-box">
+        <div class="skills-header"><h3>Current</h3></div>
+        <div class="skills-list"><span>Calculus 2</span><span>Data & Structure</span><span>C++</span><span>PHYS 195</span><span>Assembly/MIPS</span></div>
+      </div>
+    </div>
+  </div>
+
+  
+
+<div class="about-code">
+  <div class="top-header">
+    <h2 class="top-header-code-title" id="active-file-title">paulApp.js</h2>
+  </div>
+
+
+
+  
+  <div class="vsc-tabs" role="tablist" aria-label="Editor file tabs">
+
+    <div class="mac-dots" aria-hidden="true">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+
+    <button class="vsc-tab is-active" data-lang="js" data-filename="paulApp.js">
+      <img class="vsc-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js">
+      <span class="vsc-label">paulApp.js</span>
+    </button>
+
+    <button class="vsc-tab" data-lang="py" data-filename="paulApp.py">
+      <img class="vsc-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="py">
+      <span class="vsc-label">paulApp.py</span>
+    </button>
+
+    <button class="vsc-tab" data-lang="cpp" data-filename="paulApp.cpp">
+      <img class="vsc-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="cpp">
+      <span class="vsc-label">paulApp.cpp</span>
+    </button>
+
+    <button class="vsc-tab" data-lang="java" data-filename="paulApp.java">
+      <img class="vsc-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java">
+      <span class="vsc-label">paulApp.java</span>
+    </button>
+
+    <button class="vsc-tab" role="tab" aria-selected="false"
+            data-lang="json" data-filename="iLoveMusic.json">
+      <img class="vsc-icon" src="https://cdn.jsdelivr.net/gh/vscode-icons/vscode-icons/icons/file_type_json.svg" alt="json">
+      <span class="vsc-label">iLoveMusic.json</span>
+    </button>
+
+
+
+
+  </div>
+
+  
+  <div class="code-editor no-gutter" id="code-editor">
+    <pre class="code"><code id="code-lines">
+      
+    </code></pre>
+  </div>
+
+  
+
+<template id="tpl-js">
+<span><span class="com">// paulApp.js</span></span>
+<span><span class="kw">class</span> <span class="class">paulNguyen</span> {</span>
+<span>  <span class="fn">constructor</span>() {</span>
+<span>    <span class="prop">this</span>.<span class="prop">vietnameseName</span> <span class="op">=</span> <span class="str">"Bao Nguyen"</span>;</span>
+<span>    <span class="prop">this</span>.<span class="prop">engName</span> <span class="op">=</span> <span class="str">"Paul"</span>;</span>
+<span>    <span class="prop">this</span>.<span class="prop">age</span> <span class="op">=</span> <span class="num">18</span>;</span>
+<span>    <span class="prop">this</span>.<span class="prop">phone</span> <span class="op">=</span> <span class="str">"619-247-6380"</span>;</span>
+<span>    <span class="prop">this</span>.<span class="prop">emailWork</span> <span class="op">=</span> <span class="str">"baonguyen@paully.fun"</span>;</span>
+<span>    <span class="prop">this</span>.<span class="prop">emailSchool</span> <span class="op">=</span> <span class="str">"bnguyen8023@sdsu.edu"</span>;</span>
+<span>    <span class="prop">this</span>.<span class="prop">emailPersonal</span> <span class="op">=</span> <span class="str">"bquoc6834@gmail.com"</span>;</span>
+<span>  }</span>
+<span>  <span class="fn">myProjectsAndInvolvement</span>() {</span>
+<span>    <span class="kw">return</span> [</span>
+<span>      {<span class="prop">year</span>: <span class="str">"2018"</span>, <span class="prop">events</span>: <span class="str">"Discord multipurpose bot implemented by 5000+ lines of Python code, used by 100+ servers and 41000+ active users."</span>},</span>
+<span>      {<span class="prop">year</span>: <span class="str">"2019"</span>, <span class="prop">events</span>: <span class="str">"E-commerce mock brand website with HTML and CSS."</span>},</span>
+<span>      {<span class="prop">year</span>: <span class="str">"2020"</span>, <span class="prop">events</span>: <span class="str">"Traveling website design."</span>},</span>
+<span>      {<span class="prop">year</span>: <span class="str">"2021"</span>, <span class="prop">events</span>: <span class="str">"Portfolio website with HTML, CSS, and Javascript."</span>},</span>
+<span>      {<span class="prop">year</span>: <span class="str">"2022"</span>, <span class="prop">events</span>: <span class="str">"Class representative of the student council APU Vietnam 2022."</span>},</span>
+<span>      {<span class="prop">year</span>: <span class="str">"2023"</span>, <span class="prop">events</span>: <span class="str">"Involvement in APU Vietnam Science Fair, the effect of music on domestic animals."</span>},</span>
+<span>      {<span class="prop">year</span>: <span class="str">"2025"</span>, <span class="prop">events</span>: <span class="str">"Researching and Empowering Education Through AI."</span>}</span>
+<span>    ];</span>
+<span>  }</span>
+<span>  <span class="fn">myInterest</span>() {</span>
+<span>    <span class="kw">return</span> [<span class="str">'Web Development'</span>, <span class="str">'Software Development'</span>, <span class="str">'Backend'</span>, <span class="str">'Frontend'</span>, <span class="str">'Databases'</span>];</span>
+<span>  }</span>
+<span>  <span class="fn">programmingLanguage</span>() {</span>
+<span>    <span class="kw">return</span> [<span class="str">'Python'</span>, <span class="str">'HTML'</span>, <span class="str">'CSS'</span>, <span class="str">'Javascript'</span>];</span>
+<span>  }</span>
+<span>}</span>
+</template>
+
+
+
+<template id="tpl-py">
+<span><span class="com"># paulApp.py</span></span>
+<span><span class="kw">class</span> <span class="class">PaulNguyen</span>:</span>
+<span>    <span class="kw">def</span> <span class="fn">__init__</span>(<span class="prop">self</span>):</span>
+<span>        <span class="prop">self</span>.<span class="prop">vietnamese_name</span> <span class="op">=</span> <span class="str">"Bao Nguyen"</span></span>
+<span>        <span class="prop">self</span>.<span class="prop">eng_name</span> <span class="op">=</span> <span class="str">"Paul"</span></span>
+<span>        <span class="prop">self</span>.<span class="prop">age</span> <span class="op">=</span> <span class="num">18</span></span>
+<span>        <span class="prop">self</span>.<span class="prop">phone</span> <span class="op">=</span> <span class="str">"619-247-6380"</span></span>
+<span>        <span class="prop">self</span>.<span class="prop">email_work</span> <span class="op">=</span> <span class="str">"baonguyen@paully.fun"</span></span>
+<span>        <span class="prop">self</span>.<span class="prop">email_school</span> <span class="op">=</span> <span class="str">"bnguyen8023@sdsu.edu"</span></span>
+<span>        <span class="prop">self</span>.<span class="prop">email_personal</span> <span class="op">=</span> <span class="str">"bquoc6834@gmail.com"</span></span>
+<span></span>
+<span>    <span class="kw">def</span> <span class="fn">myProjectsAndInvolvement</span>(<span class="prop">self</span>):</span>
+<span>        <span class="kw">return</span> [</span>
+<span>            {<span class="str">"year"</span>: <span class="str">"2018"</span>, <span class="str">"events"</span>: <span class="str">"Discord multipurpose bot implemented by 5000+ lines of Python code, used by 100+ servers and 41000+ active users."</span>},</span>
+<span>            {<span class="str">"year"</span>: <span class="str">"2019"</span>, <span class="str">"events"</span>: <span class="str">"E-commerce mock brand website with HTML and CSS."</span>},</span>
+<span>            {<span class="str">"year"</span>: <span class="str">"2020"</span>, <span class="str">"events"</span>: <span class="str">"Traveling website design."</span>},</span>
+<span>            {<span class="str">"year"</span>: <span class="str">"2021"</span>, <span class="str">"events"</span>: <span class="str">"Portfolio website with HTML, CSS, and Javascript."</span>},</span>
+<span>            {<span class="str">"year"</span>: <span class="str">"2022"</span>, <span class="str">"events"</span>: <span class="str">"Class representative of the student council APU Vietnam 2022."</span>},</span>
+<span>            {<span class="str">"year"</span>: <span class="str">"2023"</span>, <span class="str">"events"</span>: <span class="str">"Involvement in APU Vietnam Science Fair, the effect of music on domestic animals."</span>},</span>
+<span>            {<span class="str">"year"</span>: <span class="str">"2025"</span>, <span class="str">"events"</span>: <span class="str">"Researching and Empowering Education Through AI."</span>}</span>
+<span>        ]</span>
+<span></span>
+<span>    <span class="kw">def</span> <span class="fn">myInterest</span>(<span class="prop">self</span>):</span>
+<span>        <span class="kw">return</span> [<span class="str">"Web Development"</span>, <span class="str">"Software Development"</span>, <span class="str">"Backend"</span>, <span class="str">"Frontend"</span>, <span class="str">"Databases"</span>]</span>
+<span></span>
+<span>    <span class="kw">def</span> <span class="fn">programmingLanguage</span>(<span class="prop">self</span>):</span>
+<span>        <span class="kw">return</span> [<span class="str">"Python"</span>, <span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"Javascript"</span>]</span>
+</template>
+
+
+
+
+<template id="tpl-cpp">
+<span><span class="com">// paulApp.cpp</span></span>
+<span><span class="kw">#include</span> <span class="str">&lt;iostream&gt;</span></span>
+<span><span class="kw">#include</span> <span class="str">&lt;vector&gt;</span></span>
+<span><span class="kw">#include</span> <span class="str">&lt;string&gt;</span></span>
+<span><span class="kw">using</span> <span class="kw">namespace</span> std;</span>
+<span><span class="kw">struct</span> <span class="class">Event</span> { string year; string events; };</span>
+<span><span class="kw">class</span> <span class="class">PaulNguyen</span> {</span>
+<span><span class="kw">public</span>:</span>
+<span>  string vietnameseName <span class="op">=</span> <span class="str">"Bao Nguyen"</span>;</span>
+<span>  string engName <span class="op">=</span> <span class="str">"Paul"</span>;</span>
+<span>  <span class="kw">int</span> age <span class="op">=</span> <span class="num">18</span>;</span>
+<span>  string phone <span class="op">=</span> <span class="str">"619-247-6380"</span>;</span>
+<span>  string emailWork <span class="op">=</span> <span class="str">"baonguyen@paully.fun"</span>;</span>
+<span>  string emailSchool <span class="op">=</span> <span class="str">"bnguyen8023@sdsu.edu"</span>;</span>
+<span>  string emailPersonal <span class="op">=</span> <span class="str">"bquoc6834@gmail.com"</span>;</span>
+
+<span>  vector&lt;Event&gt; <span class="fn">myProjectsAndInvolvement</span>() {</span>
+<span>    <span class="kw">return</span> {</span>
+<span>      {<span class="str">"2018"</span>, <span class="str">"Discord multipurpose bot implemented by 5000+ lines of Python code, used by 100+ servers and 41000+ active users."</span>},</span>
+<span>      {<span class="str">"2019"</span>, <span class="str">"E-commerce mock brand website with HTML and CSS."</span>},</span>
+<span>      {<span class="str">"2020"</span>, <span class="str">"Traveling website design."</span>},</span>
+<span>      {<span class="str">"2021"</span>, <span class="str">"Portfolio website with HTML, CSS, and Javascript."</span>},</span>
+<span>      {<span class="str">"2022"</span>, <span class="str">"Class representative of the student council APU Vietnam 2022."</span>},</span>
+<span>      {<span class="str">"2023"</span>, <span class="str">"Involvement in APU Vietnam Science Fair, the effect of music on domestic animals."</span>},</span>
+<span>      {<span class="str">"2025"</span>, <span class="str">"Researching and Empowering Education Through AI."</span>}</span>
+<span>    };</span>
+<span>  }</span>
+
+<span>  vector&lt;string&gt; <span class="fn">myInterest</span>() {</span>
+<span>    <span class="kw">return</span> {<span class="str">"Web Development"</span>, <span class="str">"Software Development"</span>, <span class="str">"Backend"</span>, <span class="str">"Frontend"</span>, <span class="str">"Databases"</span>};</span>
+<span>  }</span>
+
+<span>  vector&lt;string&gt; <span class="fn">programmingLanguage</span>() {</span>
+<span>    <span class="kw">return</span> {<span class="str">"Python"</span>, <span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"Javascript"</span>};</span>
+<span>  }</span>
+<span>};</span>
+</template>
+
+
+
+
+
+<template id="tpl-java">
+<span><span class="com">// paulApp.java</span></span>
+<span><span class="kw">import</span> java.util.*;</span>
+<span><span class="kw">class</span> <span class="class">Event</span> {</span>
+<span>  String year; String events;</span>
+<span>  Event(String y, String e){ year = y; events = e; }</span>
+<span>}</span>
+<span><span class="kw">public class</span> <span class="class">PaulNguyen</span> {</span>
+<span>  String vietnameseName <span class="op">=</span> <span class="str">"Bao Nguyen"</span>;</span>
+<span>  String engName <span class="op">=</span> <span class="str">"Paul"</span>;</span>
+<span>  <span class="kw">int</span> age <span class="op">=</span> <span class="num">18</span>;</span>
+<span>  String phone <span class="op">=</span> <span class="str">"619-247-6380"</span>;</span>
+<span>  String emailWork <span class="op">=</span> <span class="str">"baonguyen@paully.fun"</span>;</span>
+<span>  String emailSchool <span class="op">=</span> <span class="str">"bnguyen8023@sdsu.edu"</span>;</span>
+<span>  String emailPersonal <span class="op">=</span> <span class="str">"bquoc6834@gmail.com"</span>;</span>
+<span>  List&lt;Event&gt; <span class="fn">myProjectsAndInvolvement</span>() {</span>
+<span>    <span class="kw">return</span> Arrays.asList(</span>
+<span>      <span class="kw">new</span> Event(<span class="str">"2018"</span>, <span class="str">"Discord multipurpose bot implemented by 5000+ lines of Python code, used by 100+ servers and 41000+ active users."</span>),</span>
+<span>      <span class="kw">new</span> Event(<span class="str">"2019"</span>, <span class="str">"E-commerce mock brand website with HTML and CSS."</span>),</span>
+<span>      <span class="kw">new</span> Event(<span class="str">"2020"</span>, <span class="str">"Traveling website design."</span>),</span>
+<span>      <span class="kw">new</span> Event(<span class="str">"2021"</span>, <span class="str">"Portfolio website with HTML, CSS, and Javascript."</span>),</span>
+<span>      <span class="kw">new</span> Event(<span class="str">"2022"</span>, <span class="str">"Class representative of the student council APU Vietnam 2022."</span>),</span>
+<span>      <span class="kw">new</span> Event(<span class="str">"2023"</span>, <span class="str">"Involvement in APU Vietnam Science Fair, the effect of music on domestic animals."</span>),</span>
+<span>      <span class="kw">new</span> Event(<span class="str">"2025"</span>, <span class="str">"Researching and Empowering Education Through AI."</span>)</span>
+<span>    );</span>
+<span>  }</span>
+<span>  List&lt;String&gt; <span class="fn">myInterest</span>() {</span>
+<span>    <span class="kw">return</span> Arrays.asList(<span class="str">"Web Development"</span>, <span class="str">"Software Development"</span>, <span class="str">"Backend"</span>, <span class="str">"Frontend"</span>, <span class="str">"Databases"</span>);</span>
+<span>  }</span>
+<span>  List&lt;String&gt; <span class="fn">programmingLanguage</span>() {</span>
+<span>    <span class="kw">return</span> Arrays.asList(<span class="str">"Python"</span>, <span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"Javascript"</span>);</span>
+<span>  }</span>
+<span>}</span>
+</template>
+
+
+<template id="tpl-json">
+<span>{</span>
+<span>  <span class="str">"favorites"</span><span class="op">:</span> [</span>
+<span>    { <span class="str">"artist"</span><span class="op">:</span> <span class="str">"Crystal Castles"</span>, <span class="str">"album"</span><span class="op">:</span> <span class="str">"III"</span>, <span class="str">"songs"</span><span class="op">:</span> [<span class="str">"Affection"</span>, <span class="str">"Child I Will Hurt You"</span>] },</span>
+<span>    { <span class="str">"artist"</span><span class="op">:</span> <span class="str">"Pastel Ghost"</span>, <span class="str">"album"</span><span class="op">:</span> <span class="str">"When You Sleep"</span>, <span class="str">"songs"</span><span class="op">:</span> [<span class="str">"When You Sleep"</span>] },</span>
+<span>    { <span class="str">"artist"</span><span class="op">:</span> <span class="str">"Wifiskeleton"</span>, <span class="str">"album"</span><span class="op">:</span> <span class="str">"Pony"</span>, <span class="str">"songs"</span><span class="op">:</span> [<span class="str">"Pony"</span>, <span class="str">"Bipolar"</span>] },</span>
+<span>    { <span class="str">"artist"</span><span class="op">:</span> <span class="str">"Sidewalks and Skeletons"</span>, <span class="str">"album"</span><span class="op">:</span> <span class="str">"White Light"</span>, <span class="str">"songs"</span><span class="op">:</span> [<span class="str">"White Light"</span>] },</span>
+<span>    { <span class="str">"artist"</span><span class="op">:</span> <span class="str">"Cigarette After Sex"</span>, <span class="str">"album"</span><span class="op">:</span> <span class="str">"I."</span>, <span class="str">"songs"</span><span class="op">:</span> [<span class="str">"Starry Eyes"</span>] },</span>
+<span>    { <span class="str">"artist"</span><span class="op">:</span> <span class="str">"Billie Eilish"</span>, <span class="str">"album"</span><span class="op">:</span> <span class="str">"Happier Than Ever"</span>, <span class="str">"songs"</span><span class="op">:</span> [<span class="str">"Halley's Comet"</span>, <span class="str">"Getting Older"</span>] },</span>
+<span>    { <span class="str">"artist"</span><span class="op">:</span> <span class="str">"2pac"</span>, <span class="str">"album"</span><span class="op">:</span> <span class="str">"Greatest Hits"</span>, <span class="str">"songs"</span><span class="op">:</span> [<span class="str">"Changes"</span>] }</span>
+<span>  ]</span>
+<span>}</span>
+</template>
+
+
+
+</div>
+
+
+  
+  <div id="skills">
+    <div class="top-header"><h1>Coding Skills</h1></div>
+    
+    <div class="skills-container">
+      <div class="circle-row">
+        <div class="circle__progress-container">
+          <span class="text">Python</span>
+          <div class="circular-progress"><span class="progress-value">90%</span></div>
+        </div>
+        <div class="circle__progress-container">
+          <span class="text">HTML</span>
+          <div class="circular-progress"><span class="progress-value">30%</span></div>
+        </div>
+        <div class="circle__progress-container">
+          <span class="text">CSS</span>
+          <div class="circular-progress"><span class="progress-value">50%</span></div>
+        </div>
+        <div class="circle__progress-container">
+          <span class="text">JavaScript</span>
+          <div class="circular-progress"><span class="progress-value">25%</span></div>
+        </div>
+        <div class="circle__progress-container">
+          <span class="text">Java</span>
+          <div class="circular-progress"><span class="progress-value">20%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bar-container">
+    <div class="bar-skill-box">
+      <span class="title">Communication</span>
+      <div class="skill-bar"><span class="skill-per html"><span class="tooltip">15%</span></span></div>
+    </div>
+    <div class="bar-skill-box">
+      <span class="title">Solidarity</span>
+      <div class="skill-bar"><span class="skill-per css"><span class="tooltip">99%</span></span></div>
+    </div>
+    <div class="bar-skill-box">
+      <span class="title">Creativity</span>
+      <div class="skill-bar"><span class="skill-per javascript"><span class="tooltip">60%</span></span></div>
+    </div>
+    <div class="bar-skill-box">
+      <span class="title">Artistic</span>
+      <div class="skill-bar"><span class="skill-per nodejs"><span class="tooltip">100%</span></span></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+      
+
+       <section class="card-slider" id="projects">
+        <div class="top-header">
+          <h1>Why Me</h1>
+        </div>
+        <div class="slider">
+          <div class="item">
+              <h1>Mr. Trieu Ng</h1>
+              “Teaching Paul for his senior year was an ambivalent experience, he had his up and down, but overall, he is a hardworking student”
+          </div>
+          <div class="item">
+              <h1>Ms. Irine J</h1>
+              "Paul is a great student. He is hardworking and the most disciplined student I have ever known. He is respectful of teachers and his fellow students."
+          </div>
+          <div class="item">
+              <h1>Mr. Noah F</h1>
+              "Paul was the most productive student in my science class, he hasn't fail to accomplish both classwork and homework, his grades are ranging from B to mostly A."
+          </div>
+          <div class="item">
+            <h1>Mr. David H</h1>
+            “Paul is one of the most receptive and curious students I have known during my teaching career.”
+          </div>
+          <div class="item">
+              <h1>Mr. Sean B</h1>
+              "This senior student was amazing in English class! They made learning fun and inspired everyone to love reading and writing."
+          </div>
+          <div class="item">
+              <h1>Mr. John K</h1>
+              Paul was one of my favourite student to have a class on in my career, he brough joys and laughters to my class. He helps other students to finish their works.
+          </div>
+          <div class="item">
+              <h1>Mr. Joshua D</h1>
+              Paul was the most genuine student in my class, he had never leave my works on deliver, he always strive to complete it.
+          </div>
+          <button id="next">></button>
+          <button id="prev"><</button>
+        </div>
+        <div class="achievement_slider">
+          <div class="achievement_slides">
+              <img class="slide" src="img/IMG_2945.jpg" alt="Image #1">
+              <img class="slide" src="img/image-4.jpg" alt="Image #2">
+              <img class="slide" src="img/sdsu-student-academic-applications-of-ai-aaai-micro-badge.png" alt="Image #3">
+          </div>
+          <button class="before" onclick="prevSlide()">&#10094</button>
+          <button class="after" onclick="nextSlide()">&#10095</button>
+        </div>
+       </section>
+
+       
+       <section class="section" id="contact">
+        <div class="top-header">
+          <h1>I love projects!</h1>
+        </div>
+        <div class="row">
+           <div class="col">
+              <div class="contact-info">
+                  <h2>Call me maybe <i class="uil uil-corner-right-down"></i></h2>
+                  <p><i class="uil uil-envelope"></i> Email: (School) bnguyen8023@sdsu.edu<br>Email: (Work) baonguyen@paully.fun<br>Email: (Personal) bquoc6834@gmail.com</p>
+                  <p><i class="uil uil-phone"></i> Tel (US): (619) 247 6380<br>Tel (VN): +84 093 4545 093</p>
+              </div>
+           </div>
+           <div class="col contact-field">
+              <form class="form-control" id="form-control">
+                  <div class="form-inputs">
+                      <input required name="from_name" type="text" class="input-field" placeholder="Name">
+                      <input required name="email_id" type="email" class="input-field" placeholder="Email">
+                  </div>
+                  <div class="text-area">
+                      <textarea required name="message" placeholder="Message"></textarea>
+                  </div>
+                  <div class="form-button">
+                      <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                  </div>
+                </form>
+           </div>
+        </div>
+     </section>
+    </main>
+    
+    <footer>
+        <div class="top-footer">
+            <p>Paul Nguyen</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><a href="https://www.linkedin.com/in/paully-nguyen/"><i class="uil uil-linkedin"></i></a></i></div>
+            <div class="icon"><a href="https://www.instagram.com/paully.ng?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr"><i class="uil uil-instagram"></i></a></i></div>
+            <div class="icon"><a href="https://github.com/PaullyScripter"><i class="uil uil-github"></i></a></i></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a class="footer-name" href="#home" style="text-decoration: none;">Paul Nguyen</a> - All rights reserved</p>
+        </div>
+    </footer>
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "FeCplpoaQm7WszSpW",
+        });
+    })();
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js?v=2025-11-03" defer></script>
+</body>
+</html>
